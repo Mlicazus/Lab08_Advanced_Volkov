@@ -19,10 +19,14 @@
 // {
 //     Console.WriteLine($"Вход: {n}");
 //     if (n == 1)
+//     {
 //         return 1;
-//     n + SumToN(n - 1);
+//     }
+//     int result = n + SumToN(n - 1);
 //     System.Console.WriteLine($"Выход: {n}, result = {result}");
+//     return result;
 // }
+// SumToN(5);
 
 // // Шаг 4. Глубина рекурсии
 
@@ -33,4 +37,4 @@
 //         return;
 //     CountDownWithDepth(n - 1, depth + 1);
 // }
-// CountDownWithDepth(3, 4);
+// CountDownWithDepth(3, 1);
