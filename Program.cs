@@ -38,3 +38,17 @@
 //     CountDownWithDepth(n - 1, depth + 1);
 // }
 // CountDownWithDepth(3, 1);
+
+// Задача A. Сумма цифр числа
+
+int SumDigits(int n)
+{
+    if (n / 10 == 0)
+    {
+        return 0;
+    }
+    int result = (n % 10) + SumDigits(n / 10);
+    Console.WriteLine(result);
+    return result + ;
+}
+SumDigits(4725);
