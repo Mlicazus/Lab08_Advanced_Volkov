@@ -39,16 +39,36 @@
 // }
 // CountDownWithDepth(3, 1);
 
-// Задача A. Сумма цифр числа
+// // Задача A. Сумма цифр числа
 
-int SumDigits(int n)
+// int SumDigits(int n)
+// {
+//     if (n % 10 == 0)
+//     {
+//         return 0;
+//     }
+//     int result = (n % 10) + SumDigits(n / 10);
+//     return result;
+// }
+// System.Console.WriteLine(SumDigits(4725));
+
+// Итоговая задача. Рекурсивный анализ числа
+
+void CountDigits(int n)
 {
-    if (n / 10 == 0)
+    if (n % 10 == 0)
     {
         return 0;
     }
-    int result = (n % 10) + SumDigits(n / 10);
-    Console.WriteLine(result);
-    return result + ;
+    int count = 1 + CountDigits(n / 10);
+    System.Console.WriteLine(count);
 }
-SumDigits(4725);
+CountDigits
+// int PrintDigits(int n)
+// {
+//     if (n % 10 == 0)
+//     {
+//         return 0;
+//     }
+//     cw
+// }
